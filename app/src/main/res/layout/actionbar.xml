@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center"
+    android:layout_gravity="center">
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back"
+        />
+    <TextView
+        android:id="@+id/tvToolLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/btnBack"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvToolChapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tvToolLabel"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_star"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true">
+
+    </Button>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <com.every.evebible.EditTextBox
+                android:id="@+id/eidtBibleSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_conner"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/ibBibleSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/ic_search" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listBibleSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutSearch"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="검색결과가 없습니다."
+        android:textSize="30dp"
+        android:visibility="invisible" />
+    <ProgressBar
+        android:id="@+id/pbarSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+</FrameLayout>

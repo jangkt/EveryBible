@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.every.evebible.CheckLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/listBackground"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvBible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBible"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/cbFavorite"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</com.every.evebible.CheckLayout>

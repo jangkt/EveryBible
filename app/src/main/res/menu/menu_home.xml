@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bigFont"
+        android:title="큰글씨"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/middleFont"
+        android:title="중간글씨"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/smallFont"
+        android:title="작은글씨"
+        app:showAsAction="always" />
+</menu>

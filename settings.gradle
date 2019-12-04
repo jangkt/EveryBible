@@ -1,0 +1,3 @@
+rootProject.name='EveryBible'
+include ':app'
+project(':app').projectDir = new File('app')

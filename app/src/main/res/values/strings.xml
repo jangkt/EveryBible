@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">매일성경</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">메인</string>
+    <string name="title_read">리드</string>
+    <string name="title_search">서치</string>
+    <string name="title_favorites">페이버릿</string>
+</resources>
